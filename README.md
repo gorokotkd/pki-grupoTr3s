@@ -7,4 +7,4 @@ En el directorio PKI_CA se encuntran las distinas CA, raíz e intermedia, junto 
 En el directorio PKI_web se encuentran los ficheros que forman el entorno web desarrollado en PHP y HTML. Este entorno es simplemente estético, las distintas páginas no emiten realmente certificados ni los validan.
 
 
-la página web queda accesible en el [enlace](https://pki-grupotr3s.000webhostapp.com/)
+La página web queda accesible en el siguiente [enlace](https://pki-grupotr3s.000webhostapp.com/).
