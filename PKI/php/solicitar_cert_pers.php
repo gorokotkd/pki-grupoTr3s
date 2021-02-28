@@ -25,7 +25,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombre" required>
+            <input type="text" class="form-control" placeholder="Introduce tu nombre" id="nombre" name="nombre" required>
           </div>
           <div class="form-group col-md-6">
             <label for="apellido">Apellido</label>
@@ -308,10 +308,22 @@
         </div>
             <button type="submit" class="btn btn-primary">Enviar Formulario</button>
         </div>
+        <div class="row"><br></div>
+        <div class="alert alert-success" role="alert" style="display: none" id="form-success">
+          Gracias por realizar la solicitud, te enviaremos tu certificado al correo electrónico proporcionado cuando este listo.
+        </div>
       </form>
       </div>
 
+
+      <?php
+        if(isset($_REQUEST['nombre'])){
+            echo '<script>document.getElementById("form-success").style.display = "block";</script>';
+        }
+      ?>
+
     </section>
+    <?php include '../html/footer.html'; ?>
   </body>
 
   

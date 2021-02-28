@@ -1,0 +1,10 @@
+<users>
+    <user>
+        <name>admin</name>
+        <pass>pass</pass>
+    </user>
+    <user>
+        <name>gorka</name>
+        <pass>1234</pass>
+    </user>
+</users>

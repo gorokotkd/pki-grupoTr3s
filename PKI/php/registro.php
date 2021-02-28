@@ -62,6 +62,7 @@
     ?>
 
     </section><!-- /.container -->
+    <?php include '../html/footer.html'; ?>
   </body>
 
   

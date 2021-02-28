@@ -41,6 +41,15 @@
                         } 
                     }
 
+                    if($_SESSION['admin'] == 1){
+                        if ($_SESSION['page'] == 7){
+                            echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Ver Certs</a></li>';
+                        }
+                        else {
+                            echo '<li class="nav-item"><a class="nav-link " href="view_certs.php">Ver Certs</a></li>';
+                        } 
+                    }
+
                     if($_SESSION['iniciado'] == 1 && $_SESSION['admin'] == 0){
                         if ($_SESSION['page'] == 3){
                             echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Validar Cert</a></li>';
@@ -107,7 +116,7 @@
             }
 
             echo '</div>';
-        }else{
+        }else{//Sesion no iniciada
             echo '<div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                   <li class="nav-item">';

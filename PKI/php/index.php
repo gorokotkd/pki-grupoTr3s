@@ -108,6 +108,7 @@
         }
       ?>
     </section>
+    <?php include '../html/footer.html'; ?>
   </body>
 
   

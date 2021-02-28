@@ -26,14 +26,18 @@
                 <div class="card-body">
                     <h5 class="card-title">Certificado de la CA</h5>
                     <p class="card-text">Haz click aquí para descargar nuestro certificado</p>
-                    <a href="../crt/grupo3-CA.crt" class="btn btn-primary" download>Descargar!</a>
+                    <a href="../crt/intermed-ca.crt" class="btn btn-primary" download>Descargar!</a>
                 </div>
         </div>
         
       </div>
 
     </section>
+
+    <?php include '../html/footer.html'; ?>
+
   </body>
 
+  
   
 </html>
