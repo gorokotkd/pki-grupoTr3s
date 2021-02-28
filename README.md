@@ -1,4 +1,4 @@
-#Proyecto PKI Grupo 3. Gorka Álvarez, Jon Gámiz, Asier Zubia
+# Proyecto PKI Grupo 3. Gorka Álvarez, Jon Gámiz, Asier Zubia
 
 El repositorio contiene los ficheros necesarios para crear una PKI así como un entorno web en el que se gestiona.
 
