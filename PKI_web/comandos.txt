@@ -56,3 +56,22 @@ openssl ca -revoke crt/user1.crt -crl_reason superseded -config conf_file.cnf
 openssl ca -gencrl -out crl/intermed-ca.crl -config conf_file.cnf
 
 --------Fin revocar certificado---------
+-------Inicio Servidor OCSP-------
+
+--Iniciar el servidor
+openssl ocsp -port 12000 -index db/intermed-ca.index.txt -CA crt/intermed-ca.crt -rsigner crt/ocsp-server.crt -rkey private/ocsp-server.key -text -out log.txt
+
+--Conexión del cliente al servidor
+openssl ocsp -CAfile crt/intermed-ca.crt -issuer crt/intermed-ca.crt -url http://localhost:12000 -cert crt/user1.crt -resp_text -noverify
+
+-------Fin Servidor OCSP-----
+
+------Inicio Exportar Claves de certificado------
+
+--Exportar certificado y clave privada
+openssl pkcs12 -export -out user1.p12 -in crt/user1.crt -inkey ../users/private_keys/user1.key
+
+Extraer certificado y clave
+openssl pkcs12 -in user1.p12 -out crt/user1_V2.crt
+
+------Fin Exportar Claves de certificado------
