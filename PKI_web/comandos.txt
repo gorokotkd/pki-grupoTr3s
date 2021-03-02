@@ -77,8 +77,11 @@ openssl ocsp -CAfile crt/root-intermed-ca.crt.pem -issuer crt/intermed-ca.crt.pe
 --Exportar certificado y clave privada
 openssl pkcs12 -export -out user1.p12 -in crt/user1.crt -inkey ../users/private_keys/user1.key
 
-Extraer certificado y clave
+--Extraer certificado y clave (hay un bug al tratar de ver la clave)
 openssl pkcs12 -in user1.p12 -out crt/user1_V2.crt
+
+--Para extraer unicamente el certificado
+openssl pkcs12 -nokeys -in user1.p12 -out crt/user1_v2.crt
 
 ------Fin Exportar Claves de certificado------
 ------Inicio verificar certificado frente a la CRL-------
