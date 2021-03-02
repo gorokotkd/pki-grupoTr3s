@@ -56,7 +56,7 @@ openssl ca -in certreqs/user1.csr -out crt/user1.crt -config conf_file.cnf -exte
 openssl ca -revoke crt/user1.crt -crl_reason superseded -config conf_file.cnf
 
 --Publicar la lista de certificados revocados.
-openssl ca -gencrl -out crl/intermed-ca.crl -config conf_file.cnf
+openssl ca -gencrl -out crl/intermed-ca.der -config conf_file.cnf
 
 --------Fin revocar certificado---------
 -------Inicio Servidor OCSP-------
@@ -81,3 +81,12 @@ Extraer certificado y clave
 openssl pkcs12 -in user1.p12 -out crt/user1_V2.crt
 
 ------Fin Exportar Claves de certificado------
+------Inicio verificar certificado frente a la CRL-------
+
+--Obtenemos la crl
+openssl ca -gencrl -out crl/intermed-ca.der -config conf_file.cnf
+
+--verificación frente a la crl
+openssl verify -crl_check -CRLfile crl/intermed-ca.der -CAfile crt/root-intermed-ca.crt.pem crt/user1.crt.pem
+
+------Din Verificar Certificado Frente a la CRL---------
