@@ -1,0 +1,84 @@
+OCSP Request Data:
+    Version: 1 (0x0)
+    Requestor List:
+        Certificate ID:
+          Hash Algorithm: sha1
+          Issuer Name Hash: 3EF78026DFD9E16098EDE9902C9410A9208C0C14
+          Issuer Key Hash: 582F2133114F0F27ECF0E65CD3A4EBDC0DAC3697
+          Serial Number: 0D5AAAE7C68A00ED891269D922098D72
+    Request Extensions:
+        OCSP Nonce: 
+            0410C44A86E11111155BF17D5965D29B9642
+OCSP Response Data:
+    OCSP Response Status: successful (0x0)
+    Response Type: Basic OCSP Response
+    Version: 1 (0x0)
+    Responder Id: C = ES, ST = Gipuzkoa, O = Orlando, OU = IOT, CN = www.iot-ocsp-server.com, emailAddress = iot-ocsp-server@iot.com
+    Produced At: Mar  1 19:19:44 2021 GMT
+    Responses:
+    Certificate ID:
+      Hash Algorithm: sha1
+      Issuer Name Hash: 3EF78026DFD9E16098EDE9902C9410A9208C0C14
+      Issuer Key Hash: 582F2133114F0F27ECF0E65CD3A4EBDC0DAC3697
+      Serial Number: 0D5AAAE7C68A00ED891269D922098D72
+    Cert Status: good
+    This Update: Mar  1 19:19:44 2021 GMT
+
+    Response Extensions:
+        OCSP Nonce: 
+            0410C44A86E11111155BF17D5965D29B9642
+    Signature Algorithm: sha256WithRSAEncryption
+         07:33:95:ec:1a:21:98:00:7a:1f:94:43:74:7b:59:ea:26:55:
+         d2:28:62:84:cd:fc:dc:da:61:cb:29:1e:7f:b8:65:7d:e6:b1:
+         9e:6c:35:4b:bc:5e:f6:bb:d8:b2:fd:c7:1f:de:63:40:41:24:
+         c4:12:ad:cd:db:e4:2d:e9:82:ea:ab:db:85:eb:32:af:b0:df:
+         2b:af:40:e2:e8:42:3c:85:1a:d7:b4:5b:fe:eb:03:50:68:ec:
+         ba:cc:ff:73:2e:dc:e8:e3:a5:f6:56:9b:4f:70:c7:c6:34:49:
+         40:7d:43:0c:a7:05:85:bc:54:47:86:84:fc:6d:93:3c:b8:5b:
+         ee:15:96:40:62:84:8a:67:59:97:ca:a0:c2:04:65:b0:cf:b6:
+         6a:a2:a8:cc:9f:83:f8:e4:3e:4c:6a:7a:34:34:ca:8d:ca:22:
+         bd:06:74:d9:53:0e:12:b5:79:c5:41:1e:0c:80:7c:16:44:9e:
+         e9:21:35:31:3c:4b:13:dc:13:2e:7b:9a:ad:3c:26:01:33:c2:
+         d4:90:e1:75:e6:ef:9f:b9:c6:fc:48:01:1b:c5:4b:12:d9:59:
+         94:62:fb:90:e5:45:5e:d4:ca:4d:1a:bb:ff:33:9d:88:81:dc:
+         e1:74:d9:21:9c:d8:c1:38:17:1e:f5:c1:97:3c:d3:98:13:1f:
+         12:4a:c5:f6
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            0d:5a:aa:e7:c6:8a:00:ed:89:12:69:d9:22:09:8d:73
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=ES, ST=Bizkaia, O=Orlando, OU=IOT, CN=IOT_SubCA
+        Validity
+            Not Before: Mar  1 19:18:32 2021 GMT
+            Not After : Mar  1 19:18:32 2022 GMT
+        Subject: C=ES, ST=Gipuzkoa, O=Orlando, OU=IOT, CN=www.iot-ocsp-server.com/emailAddress=iot-ocsp-server@iot.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:b3:e9:de:8a:43:bd:48:07:2f:b9:20:09:d0:15:
+                    6e:4d:22:42:e1:20:53:7b:c0:a3:59:d7:60:d0:c9:
+                    d4:42:04:a5:d8:65:c2:54:a7:38:95:b7:4e:1e:cf:
+                    91:e0:65:fd:11:02:01:5c:09:e6:cf:86:d7:3a:96:
+                    01:3a:a1:d0:d7:a1:83:96:59:40:1f:d3:7e:9d:5b:
+                    e9:29:1e:dd:0a:f2:08:28:eb:ab:c9:e7:ce:54:eb:
+                    03:34:02:92:43:a0:fa:0d:86:fc:92:35:6f:ae:fe:
+                    fa:71:4a:79:59:09:08:1a:54:08:1a:63:a7:7d:cd:
+                    3c:b6:80:21:49:85:f7:e4:16:37:0a:1a:16:b9:f9:
+                    32:37:db:f8:d0:43:ba:39:0b:32:10:c0:ee:fc:6a:
+                    68:a0:7e:7c:05:f4:ff:b7:51:7d:6f:ae:66:a9:7a:
+                    21:91:ee:89:a5:05:a8:f0:f6:2b:62:75:13:70:f8:
+                    94:50:29:0f:87:8b:a3:bb:69:12:bb:0a:67:3d:15:
+                    c2:7f:64:73:b0:03:69:06:57:9e:86:7d:b1:20:53:
+                    ee:f2:94:81:8b:a4:66:cf:cb:f4:25:ec:21:bd:28:
+                    08:23:1c:ae:7c:76:09:41:c7:28:b5:9a:01:96:84:
+                    33:eb:09:f6:8d:33:29:53:fa:a0:0d:b3:fa:81:c5:
+                    9c:d7
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Authority Key Identifier: 
+                keyid:58:2F:21:33:11:4F:0F:27:EC:F0:E6:5C:D3:A4:EB:DC:0D:AC:36:97
+
+            X509v3 Basic Constraints: critic

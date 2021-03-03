@@ -24,9 +24,9 @@ privado          = $home/private
 database         = $db/intermed-ca.index.txt
 serial           = $db/intermed-ca.serial
 crlnumber        = $db/intermed-ca.crlnum
-certificate      = $home/crt/intermed-ca.crt
+certificate      = $home/crt/intermed-ca.crt.pem
 private_key      = $privado/intermed-ca.key
-crl              = $db/crl		  # (DER format)
+crl              = $db/crl/intermed-ca.der		  # (DER format)
 RANDFILE         = $privado/.rand
 new_certs_dir    = $home/newcerts
 unique_subject   = no
@@ -58,9 +58,10 @@ req_extensions     = ca_ext
 
 
 [ca_ext]
-basicConstraints     = critical,CA:true,pathlen:0
-keyUsage             = critical,keyCertSign,cRLSign
-subjectKeyIdentifier = hash
+basicConstraints	= critical,CA:true
+keyUsage		= critical,keyCertSign,cRLSign, digitalSignature
+subjectKeyIdentifier	= hash
+authorityKeyIdentifier	= keyis:always, issuer
 
 [crl_info]
 URI.0     = $crl_url
@@ -93,7 +94,7 @@ subjectKeyIdentifier    = hash
 
 [client_ext]
 authorityInfoAccess     = @issuer_info
-
+authorityKeyIdentifier  = keyid:always
 basicConstraints        = critical,CA:false
 crlDistributionPoints   = @crl_info
 extendedKeyUsage        = clientAuth
