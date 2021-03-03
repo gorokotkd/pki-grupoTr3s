@@ -8,3 +8,5 @@ En el directorio PKI_web se encuentran los ficheros que forman el entorno web de
 
 
 La página web queda accesible en el siguiente [enlace](https://pki-grupotr3s.000webhostapp.com/).
+
+En cuanto a la máquina virtual que gestiona la PKI queda accesible en el siguiente [enlace](https://mega.nz/folder/G8BCVLLD#4f5jFTfaomatlSGHqJKfMA).
