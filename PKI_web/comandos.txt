@@ -68,7 +68,7 @@ openssl ca -in certreqs/ocsp-server.csr -out crt/ocsp-server.crt.pem -config con
 openssl ocsp -port 12000 -index db/intermed-ca.index.txt -CA crt/intermed-ca.crt.pem -rsigner crt/ocsp-server.crt.pem -rkey private/ocsp-server.key -text -out log.txt
 
 --Conexión del cliente al servidor
-openssl ocsp -CAfile crt/root-intermed-ca.crt.pem -issuer crt/intermed-ca.crt.pem -url http://localhost:12000 -cert crt/user1.crt.pem -resp_text -noverify
+openssl ocsp -CAfile crt/root-intermed-ca.crt.pem -issuer crt/intermed-ca.crt.pem -url http://localhost:12000 -cert crt/user1.crt.pem -resp_text
 
 -------Fin Servidor OCSP-----
 
